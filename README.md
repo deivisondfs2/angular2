@@ -1,8 +1,9 @@
 # angular2
 Project quick start angular2
 
-TUTORIAL: TOUR OF HEROES
-https://v2.angular.io/docs/ts/latest/tutorial/
+- TUTORIAL: TOUR OF HEROES
+  - https://v2.angular.io/docs/ts/latest/tutorial/
+  - https://github.com/angular/quickstart
 
 
 
