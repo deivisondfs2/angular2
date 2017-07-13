@@ -1,3 +1,4 @@
+import { HeroService } from './hero.service';
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule }   from '@angular/forms'; // <-- NgModel lives here
@@ -9,7 +10,8 @@ import { HeroDetailComponent } from './hero-detail.component';
   imports:      [ BrowserModule, FormsModule ],
   declarations: [ AppComponent,
                   HeroDetailComponent ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  providers:    [ HeroService ]
 })
 export class AppModule {
 
