@@ -1,3 +1,4 @@
+import { AppRoutingModule } from './add.routing-module';
 import { DashboardComponent } from './dashboard.component';
 import { HeroesComponent } from './heroes.component';
 import { HeroService } from './hero.service';
@@ -12,26 +13,7 @@ import { HeroDetailComponent } from './hero-detail.component';
 @NgModule({
   imports:      [ BrowserModule,
                   FormsModule,
-                  RouterModule.forRoot([
-                    {
-                      path: '',
-                      redirectTo: '/dashboard',
-                      pathMatch: 'full'
-                    },
-                    {
-                      path: 'heroes',
-                      component: HeroesComponent
-                    },
-                    {
-                      path: 'dashboard',
-                      component: DashboardComponent
-                    },
-                    {
-                      path: 'detail/:id',
-                      component: HeroDetailComponent
-                    },
-                  ])
-                ],
+                  AppRoutingModule ],
   declarations: [ AppComponent,
                   HeroesComponent,
                   HeroDetailComponent,
